@@ -29,7 +29,7 @@ app.listen(port, () => {
   console.log(`Serveur démarré sur http://localhost:${port}`);
 });
 
-cron.schedule("50 15 * * *", () => {
+cron.schedule("55 15 * * *", () => {
   // -1h car serveur -> different timezone
   console.log("Exécution de main() à", new Date().toLocaleString());
   main();
